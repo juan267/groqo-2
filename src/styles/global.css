@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme default {
+  --color-gray: #fbfbfb;
+  --color-primary-green: rgb(4 108 78);
+}
+
+@layer colors {
+  .text-primary-green {
+    --tw-text-opacity: 1;
+    color: rgb(4 108 78 / var(--tw-text-opacity));
+  }
+
+  .bg-primary-green {
+    --tw-bg-opacity: 1;
+    background-color: rgb(4 108 78 / var(--tw-bg-opacity));
+  }
+}

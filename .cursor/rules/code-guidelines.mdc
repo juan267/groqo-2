@@ -1,0 +1,14 @@
+---
+description: coding guidelines to use
+globs: *.astro
+alwaysApply: false
+---
+
+# Your rule content
+
+- use tailwind css for all the classes don't write custom css
+- all the components should be responsive
+- Use https://daisyui.com/components/ when helpfull. Especially for things like buttons 
+- Don't add anything that is not present on images use as design examples
+- Use images in @assets/images
+

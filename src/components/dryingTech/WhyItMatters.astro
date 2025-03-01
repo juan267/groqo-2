@@ -1,0 +1,75 @@
+---
+import { Image } from "astro:assets";
+import timerIcon from "@icons/timer.svg";
+import equalIcon from "@icons/equal.svg";
+import checkmarkIcon from "@icons/checkmark.svg";
+---
+
+<section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+  <div class="container mx-auto">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
+        Why This Matters to Your Business
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Card 1: Shorter Drying Times -->
+        <div
+          class="bg-white rounded-lg p-8 border border-gray-100 shadow-sm flex flex-col items-center"
+        >
+          <div
+            class="w-16 h-16 rounded-full bg-green-50 flex items-center justify-center mb-6"
+          >
+            <img
+              src={timerIcon.src}
+              alt="Timer icon"
+              class="w-8 h-8 text-primary-green"
+            />
+          </div>
+          <h3 class="text-xl font-bold text-center mb-4">
+            Shorter Drying Times
+          </h3>
+          <p class="text-gray-700 text-center">Faster product turnaround</p>
+        </div>
+
+        <!-- Card 2: Higher Consistency -->
+        <div
+          class="bg-white rounded-lg p-8 border border-gray-100 shadow-sm flex flex-col items-center"
+        >
+          <div
+            class="w-16 h-16 rounded-full bg-green-50 flex items-center justify-center mb-6"
+          >
+            <img
+              src={equalIcon.src}
+              alt="Equal icon"
+              class="w-8 h-8 text-primary-green"
+            />
+          </div>
+          <h3 class="text-xl font-bold text-center mb-4">Higher Consistency</h3>
+          <p class="text-gray-700 text-center">
+            Better batch-to-batch reproducibility.
+          </p>
+        </div>
+
+        <!-- Card 3: GMP-Ready -->
+        <div
+          class="bg-white rounded-lg p-8 border border-gray-100 shadow-sm flex flex-col items-center"
+        >
+          <div
+            class="w-16 h-16 rounded-full bg-green-50 flex items-center justify-center mb-6"
+          >
+            <img
+              src={checkmarkIcon.src}
+              alt="Checkmark icon"
+              class="w-8 h-8 text-primary-green"
+            />
+          </div>
+          <h3 class="text-xl font-bold text-center mb-4">GMP-Ready</h3>
+          <p class="text-gray-700 text-center">
+            Ensures a safer, contaminant-free product for your customers
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

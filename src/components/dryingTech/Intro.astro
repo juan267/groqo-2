@@ -1,0 +1,47 @@
+---
+import { Image } from "astro:assets";
+import dryer1Image from "@images/dryer1.png";
+import dryer2Image from "@images/dryer2.png";
+---
+
+<section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+  <div class="container mx-auto">
+    <div class="max-w-4xl mx-auto text-center mb-16">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
+        Why Our Drying Process is Different
+      </h1>
+
+      <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+        Our cutting-edge closed-loop drying system is designed to ensure
+        consistency, efficiency, and compliance with pharmaceutical standards.
+        Unlike traditional drying rooms, our fully automated technology
+        eliminates environmental uncertainties, optimizing airflow, humidity,
+        and temperature for a perfect cure every time.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+      <!-- Left Image -->
+      <div class="rounded-lg overflow-hidden shadow-md">
+        <Image
+          src={dryer1Image}
+          alt="Pharmaceutical grade cannabis drying equipment - front view"
+          class="w-full h-auto"
+          width={600}
+          height={450}
+        />
+      </div>
+
+      <!-- Right Image -->
+      <div class="rounded-lg overflow-hidden shadow-md">
+        <Image
+          src={dryer2Image}
+          alt="Pharmaceutical grade cannabis drying equipment - side view"
+          class="w-full h-auto"
+          width={600}
+          height={450}
+        />
+      </div>
+    </div>
+  </div>
+</section>

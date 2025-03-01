@@ -1,12 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Hero from "@components/home/Hero.astro";
-import Intro from "@components/home/Intro.astro";
-import Features from "@components/home/Features.astro";
-import Certifications from "@components/home/Certifications.astro";
-import ContactUs from "@components/home/ContactUs.astro";
-import Testimonials from "@components/home/Testimonials.astro";
+import Hero from "@components/dryingTech/Hero.astro";
+import Intro from "@components/dryingTech/Intro.astro";
 import Footer from "@components/Footer.astro";
+import KeyBenefits from "@components/dryingTech/KeyBenefits.astro";
+import Timeline from "@components/dryingTech/Timeline.astro";
+import WhyItMatters from "@components/dryingTech/WhyItMatters.astro";
 ---
 
 <Layout
@@ -19,11 +18,10 @@ import Footer from "@components/Footer.astro";
       class="mt-16 mb-32 sm:mt-28 container mx-auto px-4 sm:px-6 lg:px-16 space-y-24"
     >
       <Intro />
-      <Features />
-      <Certifications />
+      <KeyBenefits />
+      <Timeline />
+      <WhyItMatters />
     </div>
-    <ContactUs />
-    <Testimonials />
   </main>
   <Footer />
 </Layout>

@@ -1,0 +1,128 @@
+---
+import shieldIcon from "@icons/shield.svg";
+import tubeIcon from "@icons/tube.svg";
+import rainIcon from "@icons/rain.svg";
+import alertIcon from "@icons/alert.svg";
+import dropIcon from "@icons/drop.svg";
+import settingsIcon from "@icons/settings.svg";
+import layersIcon from "@icons/layers.svg";
+import equalIcon from "@icons/equal.svg";
+import { Image } from "astro:assets";
+---
+
+<section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+  <div class="container mx-auto">
+    <div class="max-w-5xl mx-auto">
+      <!-- Section Title -->
+      <h2
+        class="text-3xl md:text-4xl font-bold text-gray-900 mb-16 text-center"
+      >
+        Key Benefits of Our Drying System
+      </h2>
+
+      <!-- Benefits Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+        <!-- Benefit 1 -->
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 mt-1 text-gray-400 flex-shrink-0">
+            <Image src={shieldIcon} alt="Shield icon" class="w-full h-full" />
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-900">
+              Prevents mold & contamination with a closed-loop system
+            </h3>
+          </div>
+        </div>
+
+        <!-- Benefit 2 -->
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 mt-1 text-gray-400 flex-shrink-0">
+            <Image src={tubeIcon} alt="Tube icon" class="w-full h-full" />
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-900">
+              Maintains uniform color, aroma, and potency across batches
+            </h3>
+          </div>
+        </div>
+
+        <!-- Benefit 3 -->
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 mt-1 text-gray-400 flex-shrink-0">
+            <Image src={rainIcon} alt="Rain icon" class="w-full h-full" />
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-900">
+              HEPA filtration system removes 99.95% of airborne contaminants
+            </h3>
+          </div>
+        </div>
+
+        <!-- Benefit 4 -->
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 mt-1 text-gray-400 flex-shrink-0">
+            <Image src={alertIcon} alt="Alert icon" class="w-full h-full" />
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-900">
+              Prevents hotspots that can degrade flower quality
+            </h3>
+          </div>
+        </div>
+
+        <!-- Benefit 5 -->
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 mt-1 text-gray-400 flex-shrink-0">
+            <Image src={dropIcon} alt="Drop icon" class="w-full h-full" />
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-900">
+              Consistent moisture levels for optimal cannabinoid & terpene
+              preservation
+            </h3>
+          </div>
+        </div>
+
+        <!-- Benefit 6 -->
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 mt-1 text-gray-400 flex-shrink-0">
+            <Image
+              src={settingsIcon}
+              alt="Settings icon"
+              class="w-full h-full"
+            />
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-900">
+              Adjustable air velocity & humidity settings for precision drying
+            </h3>
+          </div>
+        </div>
+
+        <!-- Benefit 7 -->
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 mt-1 text-gray-400 flex-shrink-0">
+            <Image src={layersIcon} alt="Layers icon" class="w-full h-full" />
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-900">
+              Reduces manual labor & human error, ensuring scalability
+            </h3>
+          </div>
+        </div>
+
+        <!-- Benefit 8 -->
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 mt-1 text-gray-400 flex-shrink-0">
+            <Image src={equalIcon} alt="Equal icon" class="w-full h-full" />
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-900">
+              A complete and total flower homogeneity is achieved
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

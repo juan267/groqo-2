@@ -1,0 +1,200 @@
+---
+import { Image } from "astro:assets";
+import handTrimImage from "@images/hand-trim.png";
+import PostHarvestImage3 from "@images/PostHarvestImage3.png";
+import PostHarvestImage4 from "@images/PostHarvestImage4.png";
+import PostHarvestImage5 from "@images/PostHarvestImage5.png";
+import PostHarvestImage6 from "@images/PostHarvestImage6.png";
+import PostHarvestImage7 from "@images/PostHarvestImage7.png";
+import PostHarvestImage8 from "@images/PostHarvestImage8.png";
+---
+
+<section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+  <div class="container mx-auto">
+    <div class="max-w-5xl mx-auto">
+      <h2
+        class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center"
+      >
+        Step-by Step of our post-harvest process
+      </h2>
+
+      <ul class="timeline timeline-vertical">
+        <!-- Step 1: Hand Trimming & Stem Removal -->
+        <li>
+          <div class="timeline-start timeline-box">
+            <h3 class="font-bold text-lg text-primary-green">
+              Hand Trimming & Stem Removal
+            </h3>
+            <p class="mt-2 text-gray-700">
+              Our process begins by removing stems from our plants and then
+              carefully hand-trimming each bud to enhance its visual appeal,
+              preserve trichomes, and ensure a clean, professional finish.
+            </p>
+          </div>
+          <div class="timeline-middle">
+            <div class="w-4 h-4 bg-primary-green rounded-full"></div>
+          </div>
+          <div class="timeline-end">
+            <div class="rounded-lg overflow-hidden shadow-md">
+              <Image
+                src={handTrimImage}
+                alt="Hand trimming process"
+                width={400}
+                height={300}
+                class="w-full h-auto"
+              />
+            </div>
+          </div>
+          <hr class="bg-primary-green" />
+        </li>
+
+        <!-- Step 2: Loading the Trays -->
+        <li>
+          <hr class="bg-primary-green" />
+          <div class="timeline-start">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="rounded-lg overflow-hidden shadow-md">
+                <Image
+                  src={PostHarvestImage3}
+                  alt="Loading trays process"
+                  width={200}
+                  height={150}
+                  class="w-full h-auto"
+                />
+              </div>
+              <div class="rounded-lg overflow-hidden shadow-md">
+                <Image
+                  src={PostHarvestImage4}
+                  alt="Loaded trays with flower"
+                  width={200}
+                  height={150}
+                  class="w-full h-auto"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="timeline-middle">
+            <div class="w-4 h-4 bg-primary-green rounded-full"></div>
+          </div>
+          <div class="timeline-end timeline-box">
+            <h3 class="font-bold text-lg text-primary-green">
+              Loading the Trays
+            </h3>
+            <p class="mt-2 text-gray-700">
+              Once trimmed, the flower is evenly distributed across trays,
+              ensuring proper airflow and a consistent drying process.
+            </p>
+          </div>
+          <hr class="bg-primary-green" />
+        </li>
+
+        <!-- Step 3: Rack placement in the oven -->
+        <li>
+          <hr class="bg-primary-green" />
+          <div class="timeline-start timeline-box">
+            <h3 class="font-bold text-lg text-primary-green">
+              Rack placement in the oven
+            </h3>
+            <p class="mt-2 text-gray-700">
+              The loaded trays enter our drying system, where
+              precision-controlled airflow and humidity settings create the
+              perfect environment for high-quality flower.
+            </p>
+          </div>
+          <div class="timeline-middle">
+            <div class="w-4 h-4 bg-primary-green rounded-full"></div>
+          </div>
+          <div class="timeline-end">
+            <div class="rounded-lg overflow-hidden shadow-md">
+              <Image
+                src={PostHarvestImage5}
+                alt="Rack placement in drying oven"
+                width={400}
+                height={300}
+                class="w-full h-auto"
+              />
+            </div>
+          </div>
+          <hr class="bg-primary-green" />
+        </li>
+
+        <!-- Step 4: We set our system to achieve optimal drying -->
+        <li>
+          <hr class="bg-primary-green" />
+          <div class="timeline-start">
+            <div class="rounded-lg overflow-hidden shadow-md">
+              <Image
+                src={PostHarvestImage6}
+                alt="Drying system control panel"
+                width={400}
+                height={300}
+                class="w-full h-auto"
+              />
+            </div>
+          </div>
+          <div class="timeline-middle">
+            <div class="w-4 h-4 bg-primary-green rounded-full"></div>
+          </div>
+          <div class="timeline-end timeline-box">
+            <h3 class="font-bold text-lg text-primary-green">
+              We set our system to achieve optimal drying
+            </h3>
+            <p class="mt-2 text-gray-700">
+              To ensure the highest level of terpene preservation, color, aroma,
+              and potency, we program our drying system to go through different
+              controlled phases, adjusting temperature, humidity, and laminar
+              airflow at each stage.
+            </p>
+            <div class="mt-4">
+              <p class="font-medium text-gray-800">This method allows us to:</p>
+              <ul class="list-disc pl-5 mt-2 space-y-2 text-gray-700">
+                <li>
+                  Prevent rapid drying, which could make the flower brittle and
+                  lead to the loss of volatile compounds.
+                </li>
+                <li>
+                  Ensure a controlled, gradual moisture reduction, maintaining
+                  structural integrity and preserving terpenes.
+                </li>
+                <li>
+                  Enhance the aroma profile, stabilize the flower, and minimize
+                  degradation risks, delivering a premium-quality product.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr class="bg-primary-green" />
+        </li>
+
+        <!-- Step 5: Removal & Packaging -->
+        <li>
+          <hr class="bg-primary-green" />
+          <div class="timeline-start timeline-box">
+            <h3 class="font-bold text-lg text-primary-green">
+              Removal & Packaging
+            </h3>
+            <p class="mt-2 text-gray-700">
+              Once the drying process is complete, the flower is carefully
+              removed and packaged in foil-sealed bags, protecting it from
+              light, oxygen, and contamination for maximum freshness.
+            </p>
+          </div>
+          <div class="timeline-middle">
+            <div class="w-4 h-4 bg-primary-green rounded-full"></div>
+          </div>
+          <div class="timeline-end">
+            <div class="rounded-lg overflow-hidden shadow-md">
+              <Image
+                src={PostHarvestImage8}
+                alt="Final dried flower product"
+                width={400}
+                height={300}
+                class="w-full h-auto"
+              />
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

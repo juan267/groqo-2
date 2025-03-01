@@ -1,0 +1,76 @@
+---
+import { Image } from "astro:assets";
+import cannabis1 from "@images/cannabis1.png";
+import cannabis2 from "@images/cannabis2.png";
+import cannabis3 from "@images/cannabis3.png";
+---
+
+<section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+  <div class="container mx-auto">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
+        Available Flowers
+      </h2>
+
+      <div class="rounded-xl overflow-hidden">
+        <!-- Product 1: SKY MED -->
+        <div
+          class="flex flex-col md:flex-row items-center p-8 border-b border-gray-100"
+        >
+          <div class="md:w-1/3 flex justify-center mb-6 md:mb-0">
+            <Image
+              src={cannabis1}
+              alt="SKY MED cannabis flower"
+              width={250}
+              height={250}
+              class="w-auto h-auto max-w-[200px]"
+            />
+          </div>
+          <div class="md:w-2/3 md:pl-8">
+            <h3 class="text-2xl font-bold mb-2">SKY MED</h3>
+            <p class="text-lg font-medium mb-1">CBD BETWEEN 12% TO 17%</p>
+            <p class="text-gray-700">THC &lt; 0.77</p>
+          </div>
+        </div>
+
+        <!-- Product 2: SKY SUN -->
+        <div
+          class="flex flex-col md:flex-row items-center p-8 border-b border-gray-100"
+        >
+          <div class="md:w-1/3 flex justify-center mb-6 md:mb-0">
+            <Image
+              src={cannabis2}
+              alt="SKY SUN cannabis flower"
+              width={250}
+              height={250}
+              class="w-auto h-auto max-w-[200px]"
+            />
+          </div>
+          <div class="md:w-2/3 md:pl-8">
+            <h3 class="text-2xl font-bold mb-2">SKY SUN</h3>
+            <p class="text-lg font-medium mb-1">CBG BETWEEN 12% TO 13%</p>
+            <p class="text-gray-700">THC &lt; 0.24</p>
+          </div>
+        </div>
+
+        <!-- Product 3: SKY HEALTH PLUS -->
+        <div class="flex flex-col md:flex-row items-center p-8">
+          <div class="md:w-1/3 flex justify-center mb-6 md:mb-0">
+            <Image
+              src={cannabis3}
+              alt="SKY HEALTH PLUS cannabis flower"
+              width={250}
+              height={250}
+              class="w-auto h-auto max-w-[200px]"
+            />
+          </div>
+          <div class="md:w-2/3 md:pl-8">
+            <h3 class="text-2xl font-bold mb-2">SKY HEALTH PLUS</h3>
+            <p class="text-lg font-medium mb-1">CBD BETWEEN 17% TO 18%</p>
+            <p class="text-gray-700">THC &lt; 0.89</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
