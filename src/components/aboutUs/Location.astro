@@ -1,0 +1,75 @@
+---
+import { Image } from "astro:assets";
+import colombiaMap from "@images/colombia.png";
+---
+
+<section class="sm:mt-12 bg-gray-50 px-4 py-16 mt-8">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+    <!-- Map Image -->
+    <div class="order-2 lg:order-1 sm:mr-16">
+      <div class="relative">
+        <Image
+          src={colombiaMap}
+          alt="Map of Colombia with location marker"
+          width={800}
+          height={600}
+          class="w-full h-auto"
+        />
+      </div>
+    </div>
+
+    <!-- Location Information -->
+    <div class="order-1 lg:order-2">
+      <div class="space-y-6">
+        <div>
+          <p class="text-lg font-medium uppercase tracking-wider text-gray-700">
+            LOCATION
+          </p>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mt-2">
+            We are based in Colombia
+          </h2>
+          <p class="text-base md:text-lg mt-4">
+            Our operations are located in Valle del Risaralda, in a town called
+            Viterbo
+          </p>
+        </div>
+
+        <div class="space-y-6 mt-8">
+          <p class="text-xl font-bold">THIS LOCATION IS IDEAL FOR</p>
+
+          <div class="space-y-4">
+            <div>
+              <h3 class="text-lg md:text-xl font-medium">
+                Just-in-Time Logistics
+              </h3>
+              <p class="text-base md:text-lg">
+                Located just 40 minutes from an international airport, we ensure
+                fast and reliable global shipments.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-lg md:text-xl font-medium">
+                Ideal Growing Conditions
+              </h3>
+              <p class="text-base md:text-lg">
+                Colombia's climate allows for year-round cannabis cultivation,
+                optimizing plant health and cannabinoid profiles.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-lg md:text-xl font-medium">
+                Access to Innovation
+              </h3>
+              <p class="text-base md:text-lg">
+                We are part of a growing cluster of companies developing
+                proprietary seeds and advancing cannabis genetics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
