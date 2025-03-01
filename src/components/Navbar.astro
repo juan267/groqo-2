@@ -1,6 +1,22 @@
 ---
 import { Image } from "astro:assets";
 import logo from "@images/logo.png";
+
+// Get the current path to determine active link
+const currentPath = Astro.url.pathname;
+
+// Function to check if link is active (matches current path)
+// Handles both exact matches and nested paths
+const isActive = (href) => {
+  if (href === "/") {
+    return currentPath === "/";
+  }
+  return currentPath.startsWith(href);
+};
+
+// Active link classes
+const activeClass = "text-primary-green font-semibold";
+const mobileActiveClass = "text-primary-green font-semibold";
 ---
 
 <div class="navbar bg-base-100 shadow-sm sticky top-0 z-50">
@@ -28,15 +44,34 @@ import logo from "@images/logo.png";
             tabindex="0"
             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li><a href="/" class="font-medium py-2">HOME</a></li>
             <li>
-              <a href="/cannabis-flowers" class="font-medium py-2">PRODUCTS</a>
+              <a
+                href="/"
+                class={`font-medium py-2 ${isActive("/") ? mobileActiveClass : ""}`}
+                >HOME</a
+              >
             </li>
             <li>
-              <a href="/drying-tech" class="font-medium py-2">POST-HARVEST</a>
+              <a
+                href="/cannabis-flowers"
+                class={`font-medium py-2 ${isActive("/cannabis-flowers") ? mobileActiveClass : ""}`}
+                >PRODUCTS</a
+              >
             </li>
-            <li><a href="/about-us" class="font-medium py-2">ABOUT US</a></li>
-            <li><a href="/blog" class="font-medium py-2">BLOG</a></li>
+            <li>
+              <a
+                href="/drying-tech"
+                class={`font-medium py-2 ${isActive("/drying-tech") ? mobileActiveClass : ""}`}
+                >POST-HARVEST</a
+              >
+            </li>
+            <li>
+              <a
+                href="/about-us"
+                class={`font-medium py-2 ${isActive("/about-us") ? mobileActiveClass : ""}`}
+                >ABOUT US</a
+              >
+            </li>
           </ul>
         </div>
         <!-- Logo -->
@@ -51,30 +86,36 @@ import logo from "@images/logo.png";
       <div class="hidden lg:flex">
         <ul class="flex space-x-6">
           <li>
-            <a href="/" class="font-medium px-2 py-1 hover:text-primary">HOME</a
+            <a
+              href="/"
+              class={`font-medium px-2 py-1 hover:text-primary-green border-b-2 ${isActive("/") ? "border-primary-green " + activeClass : "border-transparent"}`}
             >
+              HOME
+            </a>
           </li>
           <li>
             <a
               href="/cannabis-flowers"
-              class="font-medium px-2 py-1 hover:text-primary">PRODUCTS</a
+              class={`font-medium px-2 py-1 hover:text-primary-green border-b-2 ${isActive("/cannabis-flowers") ? "border-primary-green " + activeClass : "border-transparent"}`}
             >
+              PRODUCTS
+            </a>
           </li>
           <li>
             <a
               href="/drying-tech"
-              class="font-medium px-2 py-1 hover:text-primary">POST-HARVEST</a
+              class={`font-medium px-2 py-1 hover:text-primary-green border-b-2 ${isActive("/drying-tech") ? "border-primary-green " + activeClass : "border-transparent"}`}
             >
+              POST-HARVEST
+            </a>
           </li>
           <li>
-            <a href="/about-us" class="font-medium px-2 py-1 hover:text-primary"
-              >ABOUT US</a
+            <a
+              href="/about-us"
+              class={`font-medium px-2 py-1 hover:text-primary-green border-b-2 ${isActive("/about-us") ? "border-primary-green " + activeClass : "border-transparent"}`}
             >
-          </li>
-          <li>
-            <a href="/blog" class="font-medium px-2 py-1 hover:text-primary"
-              >BLOG</a
-            >
+              ABOUT US
+            </a>
           </li>
         </ul>
       </div>
