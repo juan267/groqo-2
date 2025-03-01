@@ -3,12 +3,30 @@ import { Image } from "astro:assets";
 import facilityImage from "@images/post-harvest-facility.webp";
 ---
 
-<section class="w-full h-[500px] overflow-hidden">
-  <div class="inset-0">
+<section
+  class="relative w-full h-[300px] md:h-[400px] lg:h-[500px] overflow-hidden"
+>
+  <div class="absolute inset-0">
     <Image
       src={facilityImage}
       alt="Groqo facility aerial view"
+      width={1920}
+      height={1080}
       class="w-full h-full object-cover"
     />
+  </div>
+
+  <!-- Semi-transparent overlay -->
+  <div class="absolute inset-0 bg-opacity-20"></div>
+
+  <!-- About Us Text -->
+  <div class="absolute inset-0 flex items-center justify-end">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-end">
+      <h1
+        class="text-3xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg pr-4"
+      >
+        About Us
+      </h1>
+    </div>
   </div>
 </section>
