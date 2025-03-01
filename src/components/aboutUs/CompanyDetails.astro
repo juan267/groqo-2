@@ -1,0 +1,88 @@
+---
+import { Image } from "astro:assets";
+import teamImage from "@images/employees.png";
+---
+
+<section class="py-4 md:py-24">
+  <div
+    class="container mx-auto px-4 sm:px-6 lg:px-16 flex flex-col items-center"
+  >
+    <!-- Headline -->
+    <div class="max-w-lg mb-16 border-b pb-8">
+      <h2 class="text-4xl md:text-5xl font-bold mb-2">
+        Discover the essence of our company
+      </h2>
+    </div>
+
+    <div class="max-w-3xl">
+      <!-- Mission Section -->
+      <div>
+        <h3 class="text-3xl font-bold mb-6">Mission</h3>
+        <p>
+          We deliver high-quality cannabis products by combining data-driven
+          decision-making with rigorous processes that ensure consistency and
+          excellence. Through innovation and precision, we provide our customers
+          with reliable, top-tier products that meet the highest industry
+          standards.
+        </p>
+      </div>
+
+      <!-- Vision Section -->
+      <div class="mt-16">
+        <h3 class="text-3xl font-bold mb-6">Vision</h3>
+        <p>
+          To be the most trusted provider of premium cannabis in the European
+          market, setting new benchmarks for quality, transparency, and
+          innovation while ensuring every product meets strict regulatory and
+          safety standards.
+        </p>
+      </div>
+
+      <!-- Values Section -->
+      <div class="mt-16">
+        <h3 class="text-3xl font-bold mb-6">Values</h3>
+
+        <div class="space-y-8">
+          <div>
+            <h4 class="text-xl text-gray-500 mb-2">CUSTOMER FOCUSED</h4>
+            <p>
+              We prioritize our clients' needs, delivering reliable,
+              high-quality products that exceed expectations.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="text-xl text-gray-500 mb-2">DATA DRIVEN</h4>
+            <p>
+              We believe in what the numbers tell us, using data to optimize
+              every step of our process.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="text-xl text-gray-500 mb-2">PROCESS ORIENTED</h4>
+            <p>
+              Consistency and quality are at the core of what we do, supported
+              by structured workflows and precision.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team Image -->
+<div class="container mx-auto px-4 sm:px-6 lg:px-16 mb-20">
+  <div class="flex justify-center">
+    <div class="rounded-md">
+      <Image
+        src={teamImage}
+        alt="Groqo team in clean room attire"
+        width={800}
+        height={450}
+        class="w-full h-auto"
+      />
+    </div>
+  </div>
+</div>
