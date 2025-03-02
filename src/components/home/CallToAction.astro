@@ -1,29 +1,12 @@
-<section class="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-  <!-- Gradient background -->
-  <div
-    class="absolute inset-0 bg-gradient-to-br from-primary-green to-primary-green-dark opacity-95"
-  >
-  </div>
-
-  <!-- Decorative circles -->
-  <div
-    class="absolute top-10 left-10 w-40 h-40 rounded-full bg-white opacity-5"
-  >
-  </div>
-  <div
-    class="absolute bottom-10 right-10 w-32 h-32 rounded-full bg-white opacity-5"
-  >
-  </div>
-  <div
-    class="absolute bottom-40 left-1/4 w-24 h-24 rounded-full bg-white opacity-5"
-  >
-  </div>
+<section class="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden pattern">
+  <!-- Gradient background with hero pattern -->
+  <div class="absolute inset-0 bg-gradient-to-br opacity-95"></div>
 
   <div class="container mx-auto relative z-10 max-w-4xl">
     <div class="flex flex-col items-center text-center">
       <div class="inline-block mb-4">
         <span
-          class="px-4 py-1 rounded-full bg-white bg-opacity-20 text-primary-green text-sm font-medium"
+          class="px-4 py-1 rounded-full bg-white bg-opacity-20 text-white text-sm font-medium"
         >
           Premium Quality
         </span>
@@ -41,14 +24,14 @@
       <div class="flex flex-col sm:flex-row gap-4 mb-12">
         <a
           href="/contact"
-          class="px-8 py-3 bg-white text-primary-green-dark font-medium rounded-lg hover:bg-primary-green hover:text-white border border-white transition-all duration-200 shadow-lg hover:shadow-xl"
+          class="btn btn-lg bg-white text-primary-green-dark font-medium border-white hover:bg-transparent hover:text-white hover:border-white transition-all duration-200 shadow-lg hover:shadow-xl"
         >
           Contact Our Team
         </a>
 
         <a
           href="/products"
-          class="px-8 py-3 bg-transparent text-white border border-white rounded-lg hover:bg-white hover:text-primary-green-dark font-medium transition-all duration-200"
+          class="btn btn-lg btn-outline text-white border-white hover:bg-white hover:text-primary-green-dark transition-all duration-200"
         >
           Explore Products
         </a>
@@ -59,7 +42,7 @@
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5 mr-2 text-white"
+          class="h-5 w-5 flex-shrink-0 mr-3 text-white"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -71,7 +54,7 @@
             d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
           ></path>
         </svg>
-        <p>
+        <p class="text-left">
           Our team is ready to provide you with detailed information and product
           samples.
         </p>

@@ -3,38 +3,29 @@ import { Image } from "astro:assets";
 import heroImage from "@images/hero.webp";
 ---
 
-<section class="relative bg-white py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-  <div
-    class="absolute inset-0 bg-gradient-to-b from-gray-50 to-white opacity-80 z-0"
-  >
-  </div>
-
+<section
+  class="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-50"
+>
   <div class="container mx-auto relative z-10">
-    <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+    <div
+      class="flex flex-col md:flex-row items-center justify-between gap-12 max-w-6xl mx-auto"
+    >
       <!-- Text Content -->
       <div class="md:w-1/2 space-y-8">
-        <div class="inline-block mb-2">
-          <span
-            class="px-4 py-1 rounded-full bg-primary-green bg-opacity-10 text-white text-sm font-medium"
-          >
-            Premium Quality
-          </span>
-        </div>
-
         <h1
           class="text-5xl md:text-6xl font-bold text-gray-900 leading-tight tracking-tight"
         >
-          Pharma grade<br />Cannabis Flowers
+          Premium Cannabis<br />Flowers
         </h1>
 
         <p class="text-xl md:text-2xl text-gray-700 leading-relaxed max-w-xl">
-          Purity, efficacy, and safety in every flower
+          Pharmaceutical-grade quality for discerning business partners
         </p>
 
-        <div class="pt-4">
+        <div class="pt-4 flex flex-wrap gap-4">
           <a
-            href="#contact"
-            class="inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-full shadow-sm text-base font-medium text-white bg-primary-green hover:bg-primary-green-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-green transition-colors duration-200"
+            href="/#contact"
+            class="inline-flex items-center justify-center px-8 py-3 border border-transparent rounded-full shadow-lg text-base font-medium text-white bg-primary-green hover:bg-primary-green-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-green transition-all duration-200"
           >
             Partner With Us
             <svg
@@ -51,24 +42,25 @@ import heroImage from "@images/hero.webp";
                 d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
             </svg>
           </a>
+
+          <a
+            href="/cannabis-flowers"
+            class="inline-flex items-center justify-center px-8 py-3 border border-primary-green rounded-full text-base font-medium text-primary-green focus:outline-none transition-all duration-200"
+          >
+            Explore Products
+          </a>
         </div>
       </div>
 
       <!-- Image -->
-      <div class="md:w-1/2 flex justify-center md:justify-end mt-8 md:mt-0">
-        <div class="relative">
-          <div
-            class="absolute -inset-0.5 bg-primary-green rounded-2xl opacity-10 blur-lg"
-          >
-          </div>
-          <Image
-            src={heroImage}
-            alt="Pharmaceutical Grade Cannabis Flowers"
-            class="relative rounded-2xl shadow-xl w-full max-w-2xl object-contain"
-            width={600}
-            height={500}
-          />
-        </div>
+      <div class="md:w-1/2 mt-12 md:mt-0">
+        <Image
+          src={heroImage}
+          alt="Pharmaceutical Grade Cannabis Flowers"
+          class="rounded-2xl w-full h-auto object-cover"
+          width={600}
+          height={450}
+        />
       </div>
     </div>
   </div>
