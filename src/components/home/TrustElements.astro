@@ -1,0 +1,105 @@
+---
+import { Image } from "astro:assets";
+import euGmpImage from "@images/eu_gmp.png";
+import icaBpaImage from "@images/ica_bpa.png";
+---
+
+<section class="px-4 sm:px-6 lg:px-8 py-8 lg:py-16 bg-white">
+  <div class="container mx-auto">
+    <div class="flex flex-col items-center text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-3">Certifications</h2>
+      <p class="text-gray-700 leading-relaxed max-w-2xl mb-12">
+        Our commitment to quality and compliance makes us a reliable partner for
+        businesses worldwide.
+      </p>
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 max-w-4xl"
+      >
+        <!-- Certification 1 -->
+        <div
+          class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-100"
+        >
+          <div class="w-16 h-16 mb-4">
+            <Image
+              src={icaBpaImage}
+              alt="ICA BPA Certification"
+              class="w-full h-full object-contain"
+              width={140}
+              height={140}
+            />
+          </div>
+          <h3 class="font-bold text-gray-900 mb-2">
+            Good Agricultural Practices
+          </h3>
+          <p class="text-gray-700 text-center text-sm">
+            We comply with WHO guidelines on Good Agricultural Practices (GAP)
+            for medicinal plants.
+          </p>
+        </div>
+
+        <!-- EU Compliance -->
+        <div
+          class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-100"
+        >
+          <div class="w-16 h-16 mb-4">
+            <Image
+              src={euGmpImage}
+              alt="EU-GMP Certification"
+              class="w-full h-full object-contain"
+              width={140}
+              height={140}
+            />
+          </div>
+          <h3 class="font-bold text-gray-900 mb-2">
+            EU-GMP Certification <span
+              class="text-sm font-normal text-primary-green ml-1"
+              >(In Progress)</span
+            >
+          </h3>
+          <p class="text-gray-700 text-center text-sm">
+            We are actively working towards obtaining our EU-GMP certification,
+            reinforcing our commitment to delivering pharmaceutical-grade
+            cannabis.
+          </p>
+        </div>
+
+        <!-- Quality Assurance -->
+        <div
+          class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-100"
+        >
+          <div
+            class="w-16 h-16 mb-4 flex items-center justify-center text-primary-green"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-12 w-12"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-gray-900 mb-2">Quality Assurance</h3>
+          <p class="text-gray-700 text-center text-sm">
+            Rigorous testing and quality controls ensure consistent premium
+            products
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-12 pt-6 border-t border-gray-200 w-full max-w-4xl">
+        <p class="text-gray-600 text-sm text-center">
+          All our products are developed and processed in compliance with
+          international standards for pharmaceutical-grade cannabis.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
