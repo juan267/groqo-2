@@ -1,14 +1,204 @@
-<section class="hero min-h-[70vh] bg-gray py-12 px-4 md:px-8 lg:px-16">
-  <div class="container mx-auto mt-1 px-4 sm:px-6 lg:px-8">
-    <div class="flex flex-col md:flex-row items-center justify-between gap-8">
-      <!-- Text Content -->
-      <div class="md:w-1/2 space-y-6">
-        <h1 class="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
-          Advanced Drying Technology
+---
+import { Image } from "astro:assets";
+import dryingTechHero from "@images/drying-tech.webp";
+---
+
+<section class="px-4 sm:px-6 lg:px-8 bg-white pt-16">
+  <div class="container mx-auto">
+    <!-- Premium Hero Section -->
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-12">
+        <div class="inline-block mb-4">
+          <span
+            class="px-4 py-1 rounded-full bg-primary-green bg-opacity-10 text-white text-sm font-medium"
+            >First of its kind technology</span
+          >
+        </div>
+        <h1
+          class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight tracking-tight text-gray-900"
+        >
+          Advanced Drying<br />Technology
         </h1>
-        <p class="text-xl md:text-2xl text-gray-700">
-          for Pharmaceutical-Grade Cannabis
+        <p class="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+          Our pharmaceutical-grade drying system preserves cannabinoids and
+          terpenes with precision control, ensuring exceptional quality for
+          business partners.
         </p>
+      </div>
+
+      <!-- Hero Image with Premium Styling -->
+      <div class="rounded-2xl overflow-hidden shadow-lg mb-16">
+        <Image
+          src={dryingTechHero}
+          alt="Advanced cannabis drying technology"
+          width={1200}
+          height={600}
+          class="w-full h-auto object-cover"
+        />
+      </div>
+
+      <!-- Key Technology Benefits -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-12">
+        <div
+          class="bg-gray-50 rounded-xl p-8 text-center border border-gray-100 shadow-sm"
+        >
+          <div class="text-4xl font-bold text-primary-green mb-2">97%</div>
+          <p class="text-gray-600 font-medium">Terpene Retention</p>
+          <p class="text-sm text-gray-500 mt-2">
+            Preserves crucial compounds for maximum efficacy
+          </p>
+        </div>
+
+        <div
+          class="bg-gray-50 rounded-xl p-8 text-center border border-gray-100 shadow-sm"
+        >
+          <div class="text-4xl font-bold text-primary-green mb-2">±1.5%</div>
+          <p class="text-gray-600 font-medium">Moisture Precision</p>
+          <p class="text-sm text-gray-500 mt-2">
+            Ensures pharmaceutical-grade consistency
+          </p>
+        </div>
+
+        <div
+          class="bg-gray-50 rounded-xl p-8 text-center border border-gray-100 shadow-sm"
+        >
+          <div class="text-4xl font-bold text-primary-green mb-2">0%</div>
+          <p class="text-gray-600 font-medium">Microbial Growth</p>
+          <p class="text-sm text-gray-500 mt-2">
+            Meets strictest EU-GMP requirements
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Business Advantages Section -->
+    <div class="max-w-4xl mx-auto mt-16">
+      <div class="text-center mb-8">
+        <h2 class="text-2xl md:text-3xl font-bold">
+          Business Advantages of Our Technology
+        </h2>
+      </div>
+
+      <div class="bg-gray-50 rounded-xl p-8 border border-gray-100 shadow-sm">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="flex items-start">
+            <div class="mr-4 mt-1">
+              <div
+                class="w-8 h-8 bg-green-50 rounded-full flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4 text-primary-green"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h3 class="font-bold text-lg mb-2">Consistency Guarantee</h3>
+              <p class="text-gray-700">
+                Precise environmental controls ensure batch-to-batch consistency
+                your customers can count on.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <div class="mr-4 mt-1">
+              <div
+                class="w-8 h-8 bg-green-50 rounded-full flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4 text-primary-green"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h3 class="font-bold text-lg mb-2">Extended Shelf Life</h3>
+              <p class="text-gray-700">
+                Our technology extends product viability by up to 24 months,
+                reducing business waste.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <div class="mr-4 mt-1">
+              <div
+                class="w-8 h-8 bg-green-50 rounded-full flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4 text-primary-green"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h3 class="font-bold text-lg mb-2">Regulatory Compliance</h3>
+              <p class="text-gray-700">
+                Meets EU-GMP standards for pharmaceutical manufacturing with
+                full documentation.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <div class="mr-4 mt-1">
+              <div
+                class="w-8 h-8 bg-green-50 rounded-full flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4 text-primary-green"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h3 class="font-bold text-lg mb-2">
+                Premium Product Differentiation
+              </h3>
+              <p class="text-gray-700">
+                Superior color, aroma, and efficacy provides your business with
+                a competitive advantage.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

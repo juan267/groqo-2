@@ -5,71 +5,194 @@ import equalIcon from "@icons/equal.svg";
 import checkmarkIcon from "@icons/checkmark.svg";
 ---
 
-<section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-  <div class="container mx-auto">
-    <div class="max-w-5xl mx-auto">
-      <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
-        Why This Matters to Your Business
-      </h2>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Card 1: Shorter Drying Times -->
-        <div
-          class="bg-white rounded-lg p-8 border border-gray-100 shadow-sm flex flex-col items-center"
+<!-- Process Benefits Summary -->
+<div class="mt-20 bg-gray-50 rounded-2xl p-8 border border-gray-100 shadow-sm">
+  <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">
+    Why This Matters to Your Business
+  </h3>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+      <div
+        class="w-12 h-12 bg-primary-green bg-opacity-10 rounded-full flex items-center justify-center mb-4 mx-auto"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 text-white"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
         >
-          <div
-            class="w-16 h-16 rounded-full bg-green-50 flex items-center justify-center mb-6"
-          >
-            <Image
-              src={timerIcon}
-              alt="Timer icon"
-              class="w-8 h-8 text-primary-green"
-            />
-          </div>
-          <h3 class="text-xl font-bold text-center mb-4">
-            Shorter Drying Times
-          </h3>
-          <p class="text-gray-700 text-center">Faster product turnaround</p>
-        </div>
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+      </div>
+      <h4 class="font-bold text-lg text-center mb-3">Quality Assurance</h4>
+      <p class="text-gray-700 text-center">
+        Every batch meets pharmaceutical standards and comes with complete
+        documentation and testing certificates.
+      </p>
+    </div>
 
-        <!-- Card 2: Higher Consistency -->
-        <div
-          class="bg-white rounded-lg p-8 border border-gray-100 shadow-sm flex flex-col items-center"
+    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+      <div
+        class="w-12 h-12 bg-primary-green bg-opacity-10 rounded-full flex items-center justify-center mb-4 mx-auto"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 text-white"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
         >
-          <div
-            class="w-16 h-16 rounded-full bg-green-50 flex items-center justify-center mb-6"
-          >
-            <Image
-              src={equalIcon}
-              alt="Equal icon"
-              class="w-8 h-8 text-primary-green"
-            />
-          </div>
-          <h3 class="text-xl font-bold text-center mb-4">Higher Consistency</h3>
-          <p class="text-gray-700 text-center">
-            Better batch-to-batch reproducibility.
-          </p>
-        </div>
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+        </svg>
+      </div>
+      <h4 class="font-bold text-lg text-center mb-3">Market Differentiation</h4>
+      <p class="text-gray-700 text-center">
+        Superior product quality gives your business a competitive edge in the
+        premium cannabis market.
+      </p>
+    </div>
 
-        <!-- Card 3: GMP-Ready -->
-        <div
-          class="bg-white rounded-lg p-8 border border-gray-100 shadow-sm flex flex-col items-center"
+    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+      <div
+        class="w-12 h-12 bg-primary-green bg-opacity-10 rounded-full flex items-center justify-center mb-4 mx-auto"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 text-white"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
         >
-          <div
-            class="w-16 h-16 rounded-full bg-green-50 flex items-center justify-center mb-6"
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+      </div>
+      <h4 class="font-bold text-lg text-center mb-3">Supply Consistency</h4>
+      <p class="text-gray-700 text-center">
+        Our controlled processes ensure year-round availability of consistent,
+        high-quality products.
+      </p>
+    </div>
+  </div>
+
+  <div class="pt-8 border-t border-gray-200">
+    <h4 class="text-xl font-bold text-gray-900 mb-6 text-center">
+      Direct Business Impact
+    </h4>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+        <div
+          class="w-12 h-12 bg-primary-green bg-opacity-10 rounded-full flex items-center justify-center mb-4 mx-auto"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-white"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
           >
-            <Image
-              src={checkmarkIcon}
-              alt="Checkmark icon"
-              class="w-8 h-8 text-primary-green"
-            />
-          </div>
-          <h3 class="text-xl font-bold text-center mb-4">GMP-Ready</h3>
-          <p class="text-gray-700 text-center">
-            Ensures a safer, contaminant-free product for your customers
-          </p>
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
         </div>
+        <h4 class="font-bold text-lg text-center mb-3">
+          Faster Time-to-Market
+        </h4>
+        <p class="text-gray-700 text-center">
+          Our advanced drying technology reduces processing time by up to 40%,
+          allowing quicker product turnaround and improved cash flow.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+        <div
+          class="w-12 h-12 bg-primary-green bg-opacity-10 rounded-full flex items-center justify-center mb-4 mx-auto"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-white"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+            ></path>
+          </svg>
+        </div>
+        <h4 class="font-bold text-lg text-center mb-3">
+          Batch Reproducibility
+        </h4>
+        <p class="text-gray-700 text-center">
+          Achieve ±1.5% consistency between batches, ensuring a reliable product
+          experience your customers can depend on every time.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+        <div
+          class="w-12 h-12 bg-primary-green bg-opacity-10 rounded-full flex items-center justify-center mb-4 mx-auto"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-white"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+        </div>
+        <h4 class="font-bold text-lg text-center mb-3">GMP Compliance</h4>
+        <p class="text-gray-700 text-center">
+          Our processes meet stringent EU-GMP requirements, facilitating easier
+          market entry and regulatory approval for your products.
+        </p>
       </div>
     </div>
   </div>
-</section>
+
+  <div class="mt-10 text-center">
+    <a
+      href="/#contact"
+      class="inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-full shadow-sm text-base font-medium text-white bg-primary-green hover:bg-primary-green-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-green transition-colors duration-200"
+    >
+      Partner With Us
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-5 w-5 ml-2"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+      </svg>
+    </a>
+  </div>
+</div>
