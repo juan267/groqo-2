@@ -4,12 +4,18 @@
 @theme default {
   --color-gray: #fbfbfb;
   --color-primary-green: rgb(4 108 78);
+  --color-primary-green-dark: rgb(0 77 0);
 }
 
 @layer colors {
   .text-primary-green {
     --tw-text-opacity: 1;
     color: rgb(4 108 78 / var(--tw-text-opacity));
+  }
+
+  .text-primary-green-dark {
+    --tw-text-opacity: 1;
+    color: rgb(0 77 0 / var(--tw-text-opacity));
   }
 
   .bg-primary-green {
