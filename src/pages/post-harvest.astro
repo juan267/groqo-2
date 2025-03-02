@@ -1,0 +1,27 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "@components/postHarvest/Hero.astro";
+import Intro from "@components/postHarvest/Intro.astro";
+import Footer from "@components/Footer.astro";
+import KeyBenefits from "@components/postHarvest/KeyBenefits.astro";
+import Timeline from "@components/postHarvest/Timeline.astro";
+import WhyItMatters from "@components/postHarvest/WhyItMatters.astro";
+---
+
+<Layout
+  title="Groqo | Post-Harvest Drying Technology"
+  description="Groqo's first of its kind drying technology ensures consistent, high-quality cannabis flowers with optimal cannabinoid and terpene profiles."
+>
+  <main class="min-h-screen">
+    <Hero />
+    <div
+      class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-24 space-y-16 md:space-y-24"
+    >
+      <Intro />
+      <KeyBenefits />
+      <Timeline />
+      <WhyItMatters />
+    </div>
+  </main>
+  <Footer />
+</Layout>
