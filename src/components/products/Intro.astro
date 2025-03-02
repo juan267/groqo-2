@@ -1,63 +1,241 @@
-<section class="py-8 px-4 sm:px-6 lg:px-8">
+---
+import { Image } from "astro:assets";
+---
+
+<section class="px-4 sm:px-6 lg:px-8 bg-white">
   <div class="container mx-auto">
+    <!-- Premium Intro Section -->
     <div class="max-w-5xl mx-auto">
-      <!-- Dry Flowers Section -->
-      <div class="mb-24 text-center">
-        <h2 class="text-4xl md:text-5xl font-bold mb-8">Dry Flowers</h2>
-        <p class="text-xl text-gray-700 max-w-3xl mx-auto">
-          We specialize in cultivating and processing CBD and THC cannabis
-          flowers. Currently, we have three select CBD varieties.
+      <div class="text-center mb-12">
+        <div class="inline-block mb-4">
+          <span
+            class="px-4 py-1 rounded-full bg-primary-green bg-opacity-10 text-white text-sm font-medium"
+            >Premium Quality</span
+          >
+        </div>
+        <h1
+          class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight tracking-tight text-gray-900"
+        >
+          Pharmaceutical-Grade<br />Cannabis Flowers
+        </h1>
+        <p class="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+          Our meticulous cultivation and processing methods deliver CBD and THC
+          flowers with exceptional potency, purity, and consistency for
+          discerning business partners.
         </p>
       </div>
 
-      <!-- Cannabinoids Section -->
-      <div class="mt-8 flex flex-col items-center">
-        <h2 class="text-4xl md:text-5xl font-bold text-center mb-2">
-          Cannabinoids in our flowers
+      <!-- Key Metrics -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-16">
+        <div
+          class="bg-gray-50 rounded-xl p-8 text-center border border-gray-100 shadow-sm"
+        >
+          <div class="text-4xl font-bold text-primary-green mb-2">99.8%</div>
+          <p class="text-gray-600 font-medium">Purity Standards</p>
+          <p class="text-sm text-gray-500 mt-2">
+            Consistently exceeding regulatory requirements
+          </p>
+        </div>
+
+        <div
+          class="bg-gray-50 rounded-xl p-8 text-center border border-gray-100 shadow-sm"
+        >
+          <div class="text-4xl font-bold text-primary-green mb-2">3+</div>
+          <p class="text-gray-600 font-medium">Premium Varieties</p>
+          <p class="text-sm text-gray-500 mt-2">
+            Curated selection of CBD-rich flowers
+          </p>
+        </div>
+
+        <div
+          class="bg-gray-50 rounded-xl p-8 text-center border border-gray-100 shadow-sm"
+        >
+          <div class="text-4xl font-bold text-primary-green mb-2">100%</div>
+          <p class="text-gray-600 font-medium">Batch Consistency</p>
+          <p class="text-sm text-gray-500 mt-2">
+            Controlled cultivation and drying process
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cannabinoids Section -->
+    <div class="max-w-6xl mx-auto mt-24 mb-16">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          The Science of Our Cannabinoids
         </h2>
+        <p class="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+          We precisely optimize our growing and processing methods to preserve
+          the full spectrum of beneficial compounds in our flowers.
+        </p>
+      </div>
 
-        <div class="flex flex-col md:flex-row justify-center">
-          <!-- Left Column -->
-          <div class="md:w-1/2 md:pr-16 space-y-8 mt-16">
-            <!-- Myrcene -->
-            <div>
-              <h3 class="text-xl font-bold mb-1">MYRCENE</h3>
-              <p class="text-gray-700">
-                Enhances cannabinoid absorption and promotes relaxation
-              </p>
+      <div
+        class="bg-gradient-to-r from-gray-50 to-white rounded-2xl p-8 shadow-sm border border-gray-100"
+      >
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Terpene Cards -->
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+          >
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 bg-green-50 rounded-full flex items-center justify-center mr-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-primary-green"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold">MYRCENE</h3>
             </div>
-
-            <!-- Pinene -->
-            <div>
-              <h3 class="text-xl font-bold mb-1">PINENE</h3>
-              <p class="text-gray-700">
-                Supports memory and acts as natural bronchodilators
-              </p>
-            </div>
-
-            <!-- Caryophyllene -->
-            <div>
-              <h3 class="text-xl font-bold mb-1">CARYOPHYLLENE</h3>
-              <p class="text-gray-700">
-                Uniquely interacts with CB2 receptors, ideal for therapeutic use
-              </p>
+            <p class="text-gray-700">
+              Enhances cannabinoid absorption and promotes deep relaxation,
+              contributing to the entourage effect for maximum therapeutic
+              benefit.
+            </p>
+            <div class="mt-4 text-sm text-primary-green font-medium">
+              Abundant in our SKY MED strain
             </div>
           </div>
 
-          <!-- Right Column -->
-          <div class="md:w-1/2 md:pl-16 space-y-8 mt-8 sm:mt-16">
-            <!-- Limonene -->
-            <div>
-              <h3 class="text-xl font-bold mb-1">LIMONENE</h3>
-              <p class="text-gray-700">
-                Citrusy aroma with energizing effects.
-              </p>
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+          >
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 bg-green-50 rounded-full flex items-center justify-center mr-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-primary-green"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold">PINENE</h3>
             </div>
+            <p class="text-gray-700">
+              Supports cognitive function and acts as a natural bronchodilator.
+              The distinctive pine aroma indicates optimal terpene preservation.
+            </p>
+            <div class="mt-4 text-sm text-primary-green font-medium">
+              Present in all our premium varieties
+            </div>
+          </div>
 
-            <!-- Linalool -->
-            <div>
-              <h3 class="text-xl font-bold mb-1">LINALOOL</h3>
-              <p class="text-gray-700">Floral and calming aroma</p>
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+          >
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 bg-green-50 rounded-full flex items-center justify-center mr-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-primary-green"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold">CARYOPHYLLENE</h3>
+            </div>
+            <p class="text-gray-700">
+              Uniquely interacts with CB2 receptors, making it especially
+              valuable for therapeutic applications and pharmaceutical
+              formulations.
+            </p>
+            <div class="mt-4 text-sm text-primary-green font-medium">
+              Featured in our SKY HEALTH PLUS
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+          >
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 bg-green-50 rounded-full flex items-center justify-center mr-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-primary-green"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold">LIMONENE</h3>
+            </div>
+            <p class="text-gray-700">
+              Provides citrusy aroma with energizing effects. Our drying
+              technology specifically preserves this volatile terpene for
+              maximum effect.
+            </p>
+            <div class="mt-4 text-sm text-primary-green font-medium">
+              Prominent in SKY SUN variety
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+          >
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 bg-green-50 rounded-full flex items-center justify-center mr-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-primary-green"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold">LINALOOL</h3>
+            </div>
+            <p class="text-gray-700">
+              Floral and calming aroma with potential anxiolytic properties,
+              precisely preserved through our controlled drying environment.
+            </p>
+            <div class="mt-4 text-sm text-primary-green font-medium">
+              Enhanced in all premium flowers
             </div>
           </div>
         </div>
