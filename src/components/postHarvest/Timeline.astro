@@ -9,24 +9,25 @@ import PostHarvestImage7 from "@images/PostHarvestImage7.webp";
 import PostHarvestImage8 from "@images/PostHarvestImage8.webp";
 ---
 
-<section class="px-4 sm:px-6 lg:px-8 bg-white">
+<section class="px-4 sm:px-6 lg:px-8 py-16 sm:py-20 bg-white">
   <div class="container mx-auto">
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-6xl mx-auto">
       <!-- Premium Header Section -->
-      <div class="text-center mb-20">
+      <div class="text-center mb-16">
         <div class="inline-block mb-4">
           <span
-            class="px-4 py-1 rounded-full bg-primary-green bg-opacity-10 text-white text-sm font-medium"
-            >Precision Process</span
+            class="px-4 py-1.5 rounded-full bg-primary-green bg-opacity-10 text-primary-green text-sm font-medium"
           >
+            Precision Process
+          </span>
         </div>
         <h2
-          class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 text-center tracking-tight"
+          class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 tracking-tight"
         >
           Pharmaceutical-Grade<br />Post-Harvest Workflow
         </h2>
         <p
-          class="text-lg md:text-xl text-gray-700 mb-10 text-center max-w-3xl mx-auto leading-relaxed"
+          class="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed"
         >
           Our meticulously controlled process ensures consistent,
           premium-quality cannabis that meets the strictest international
@@ -34,421 +35,389 @@ import PostHarvestImage8 from "@images/PostHarvestImage8.webp";
         </p>
 
         <!-- Process Quality Metrics -->
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12">
           <div
-            class="bg-gray-50 rounded-xl p-6 border border-gray-100 shadow-sm"
+            class="card bg-base-100 hover:shadow-lg transition-shadow duration-300"
           >
-            <div class="font-bold text-xl text-primary-green mb-1">5-Stage</div>
-            <p class="text-gray-700">Validated Process</p>
+            <div class="card-body items-center text-center">
+              <div class="text-3xl font-bold text-primary-green mb-2">
+                5-Stage
+              </div>
+              <p class="text-gray-700">Validated Process</p>
+            </div>
           </div>
           <div
-            class="bg-gray-50 rounded-xl p-6 border border-gray-100 shadow-sm"
+            class="card bg-base-100 hover:shadow-lg transition-shadow duration-300"
           >
-            <div class="font-bold text-xl text-primary-green mb-1">100%</div>
-            <p class="text-gray-700">Traceable</p>
+            <div class="card-body items-center text-center">
+              <div class="text-3xl font-bold text-primary-green mb-2">100%</div>
+              <p class="text-gray-700">Traceable</p>
+            </div>
           </div>
           <div
-            class="bg-gray-50 rounded-xl p-6 border border-gray-100 shadow-sm"
+            class="card bg-base-100 hover:shadow-lg transition-shadow duration-300"
           >
-            <div class="font-bold text-xl text-primary-green mb-1">EU-GMP</div>
-            <p class="text-gray-700">Compliant</p>
+            <div class="card-body items-center text-center">
+              <div class="text-3xl font-bold text-primary-green mb-2">
+                EU-GMP
+              </div>
+              <p class="text-gray-700">Compliant</p>
+            </div>
           </div>
         </div>
       </div>
 
-      <ul class="timeline timeline-vertical">
-        <!-- Step 1: Hand Trimming & Stem Removal -->
-        <li>
+      <!-- Process Steps -->
+      <div class="space-y-16 md:space-y-24">
+        <!-- Step 1 -->
+        <div
+          class="group relative rounded-2xl bg-white shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden"
+        >
           <div
-            class="timeline-start timeline-box bg-white shadow-md border border-gray-100 p-6"
+            class="absolute inset-0 bg-gradient-to-r from-primary-green/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
           >
-            <div
-              class="mb-2 text-sm text-primary-green font-medium uppercase tracking-wider"
-            >
-              Step 01
-            </div>
-            <h3
-              class="font-bold text-xl md:text-2xl text-gray-900 leading-tight mb-3"
-            >
-              Hand Trimming & Stem Removal
-            </h3>
-            <p class="mb-4 text-base md:text-lg text-gray-700 leading-relaxed">
-              Our process begins by removing stems from our plants and then
-              carefully hand-trimming each bud to enhance its visual appeal,
-              preserve trichomes, and ensure a clean, professional finish.
-            </p>
-            <div class="mt-4 pt-4 border-t border-gray-100">
-              <div
-                class="flex items-center text-sm text-primary-green font-medium"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 mr-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"></path>
-                </svg>
-                Business Benefit: Superior Product Appearance
-              </div>
-            </div>
           </div>
-          <div class="timeline-middle">
-            <div
-              class="w-5 h-5 bg-primary-green rounded-full flex items-center justify-center"
-            >
-              <div class="w-2.5 h-2.5 bg-white rounded-full"></div>
-            </div>
-          </div>
-          <div class="timeline-end">
-            <div
-              class="rounded-xl overflow-hidden shadow-md border border-gray-100"
-            >
-              <Image
-                src={handTrimImage}
-                alt="Hand trimming process"
-                width={400}
-                height={300}
-                class="w-full h-auto"
-              />
-            </div>
-          </div>
-          <hr class="bg-primary-green" />
-        </li>
-
-        <!-- Step 2: Loading the Trays -->
-        <li>
-          <hr class="bg-primary-green" />
-          <div class="timeline-start">
-            <div class="grid grid-cols-2 gap-4">
-              <div
-                class="rounded-xl overflow-hidden shadow-md border border-gray-100"
-              >
+          <div class="lg:grid lg:grid-cols-2">
+            <div class="h-full">
+              <div class="relative h-full min-h-[300px] lg:min-h-full">
                 <Image
-                  src={PostHarvestImage3}
-                  alt="Loading trays process"
-                  width={200}
-                  height={150}
-                  class="w-full h-auto"
+                  src={handTrimImage}
+                  alt="Hand trimming process"
+                  width={800}
+                  height={500}
+                  class="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
-              <div
-                class="rounded-xl overflow-hidden shadow-md border border-gray-100"
-              >
+            </div>
+            <div class="p-8 lg:p-12">
+              <div class="flex items-center gap-4 mb-6">
+                <div class="badge badge-lg bg-primary-green text-white">
+                  Step 01
+                </div>
+                <div class="h-px flex-1 bg-gray-100"></div>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                Hand Trimming & Stem Removal
+              </h3>
+              <p class="text-gray-700">
+                Our process begins by removing stems from our plants and then
+                carefully hand-trimming each bud to enhance its visual appeal,
+                preserve trichomes, and ensure a clean, professional finish.
+              </p>
+              <div class="mt-8">
+                <div
+                  class="flex items-center gap-3 px-5 py-4 bg-gray-50 rounded-xl border border-gray-100"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-primary-green flex-shrink-0"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="font-medium text-gray-900"
+                    >Business Benefit: Superior Product Appearance</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div
+          class="group relative rounded-2xl bg-white shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden"
+        >
+          <div
+            class="absolute inset-0 bg-gradient-to-l from-primary-green/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+          </div>
+          <div class="lg:grid lg:grid-cols-2">
+            <div class="p-8 lg:p-12 lg:order-1">
+              <div class="flex items-center gap-4 mb-6">
+                <div class="badge badge-lg bg-primary-green text-white">
+                  Step 02
+                </div>
+                <div class="h-px flex-1 bg-gray-100"></div>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                Precision Tray Loading
+              </h3>
+              <p class="text-gray-700">
+                Once trimmed, the flower is precisely distributed across
+                specialized trays, ensuring optimal airflow and consistent
+                exposure for uniform drying. Each batch is digitally tracked for
+                complete quality assurance.
+              </p>
+              <div class="mt-8">
+                <div
+                  class="flex items-center gap-3 px-5 py-4 bg-gray-50 rounded-xl border border-gray-100"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-primary-green flex-shrink-0"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="font-medium text-gray-900"
+                    >Business Benefit: Batch Consistency</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="h-full lg:order-2">
+              <div class="relative h-full min-h-[300px] lg:min-h-full">
                 <Image
                   src={PostHarvestImage4}
                   alt="Loaded trays with flower"
-                  width={200}
-                  height={150}
-                  class="w-full h-auto"
+                  width={800}
+                  height={500}
+                  class="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
             </div>
           </div>
-          <div class="timeline-middle">
-            <div
-              class="w-5 h-5 bg-primary-green rounded-full flex items-center justify-center"
-            >
-              <div class="w-2.5 h-2.5 bg-white rounded-full"></div>
-            </div>
-          </div>
-          <div
-            class="timeline-end timeline-box bg-white shadow-md border border-gray-100 p-6"
-          >
-            <div
-              class="mb-2 text-sm text-primary-green font-medium uppercase tracking-wider"
-            >
-              Step 02
-            </div>
-            <h3
-              class="font-bold text-xl md:text-2xl text-gray-900 leading-tight mb-3"
-            >
-              Precision Tray Loading
-            </h3>
-            <p class="mb-4 text-base md:text-lg text-gray-700 leading-relaxed">
-              Once trimmed, the flower is precisely distributed across
-              specialized trays, ensuring optimal airflow and consistent
-              exposure for uniform drying. Each batch is digitally tracked for
-              complete quality assurance.
-            </p>
-            <div class="mt-4 pt-4 border-t border-gray-100">
-              <div
-                class="flex items-center text-sm text-primary-green font-medium"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 mr-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"></path>
-                </svg>
-                Business Benefit: Batch Consistency
-              </div>
-            </div>
-          </div>
-          <hr class="bg-primary-green" />
-        </li>
+        </div>
 
-        <!-- Step 3: Rack placement in the oven -->
-        <li>
-          <hr class="bg-primary-green" />
+        <!-- Step 3 -->
+        <div
+          class="group relative rounded-2xl bg-white shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden"
+        >
           <div
-            class="timeline-start timeline-box bg-white shadow-md border border-gray-100 p-6"
+            class="absolute inset-0 bg-gradient-to-r from-primary-green/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
           >
-            <div
-              class="mb-2 text-sm text-primary-green font-medium uppercase tracking-wider"
-            >
-              Step 03
-            </div>
-            <h3
-              class="font-bold text-xl md:text-2xl text-gray-900 leading-tight mb-3"
-            >
-              Controlled Environment Loading
-            </h3>
-            <p class="mb-4 text-base md:text-lg text-gray-700 leading-relaxed">
-              The loaded trays enter our proprietary drying system, where
-              precision-controlled airflow, temperature, and humidity settings
-              create the ideal environment for pharmaceutical-grade flower
-              development.
-            </p>
-            <div class="mt-4 pt-4 border-t border-gray-100">
-              <div
-                class="flex items-center text-sm text-primary-green font-medium"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 mr-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"></path>
-                </svg>
-                Business Benefit: Contamination Prevention
-              </div>
-            </div>
           </div>
-          <div class="timeline-middle">
-            <div
-              class="w-5 h-5 bg-primary-green rounded-full flex items-center justify-center"
-            >
-              <div class="w-2.5 h-2.5 bg-white rounded-full"></div>
-            </div>
-          </div>
-          <div class="timeline-end">
-            <div
-              class="rounded-xl overflow-hidden shadow-md border border-gray-100"
-            >
-              <Image
-                src={PostHarvestImage5}
-                alt="Rack placement in drying oven"
-                width={400}
-                height={300}
-                class="w-full h-auto"
-              />
-            </div>
-          </div>
-          <hr class="bg-primary-green" />
-        </li>
-
-        <!-- Step 4: We set our system to achieve optimal drying -->
-        <li>
-          <hr class="bg-primary-green" />
-          <div class="timeline-start">
-            <div class="flex flex-col space-y-4">
-              <div
-                class="rounded-xl overflow-hidden shadow-md border border-gray-100"
-              >
+          <div class="lg:grid lg:grid-cols-2">
+            <div class="h-full">
+              <div class="relative h-full min-h-[300px] lg:min-h-full">
                 <Image
                   src={PostHarvestImage6}
-                  alt="Drying system control panel"
-                  width={400}
-                  height={300}
-                  class="w-full h-auto"
+                  alt="Rack placement in drying oven"
+                  width={800}
+                  height={500}
+                  class="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
+            </div>
+            <div class="p-8 lg:p-12">
+              <div class="flex items-center gap-4 mb-6">
+                <div class="badge badge-lg bg-primary-green text-white">
+                  Step 03
+                </div>
+                <div class="h-px flex-1 bg-gray-100"></div>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                Rack Placement in Drying Oven
+              </h3>
+              <p class="text-gray-700">
+                The loaded trays enter our first of its kind drying system,
+                where precision-controlled airflow, temperature, and humidity
+                settings create the ideal environment for pharmaceutical-grade
+                flower development.
+              </p>
+              <div class="mt-8">
+                <div
+                  class="flex items-center gap-3 px-5 py-4 bg-gray-50 rounded-xl border border-gray-100"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-primary-green flex-shrink-0"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="font-medium text-gray-900"
+                    >Business Benefit: Contamination Prevention</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div
+          class="group relative rounded-2xl bg-white shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden"
+        >
+          <div
+            class="absolute inset-0 bg-gradient-to-l from-primary-green/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+          </div>
+          <div class="lg:grid lg:grid-cols-2">
+            <div class="p-8 lg:p-12 lg:order-1">
+              <div class="flex items-center gap-4 mb-6">
+                <div class="badge badge-lg bg-primary-green text-white">
+                  Step 04
+                </div>
+                <div class="h-px flex-1 bg-gray-100"></div>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                Multi-Phase Drying Protocol
+              </h3>
+              <p class="text-gray-700">
+                Our proprietary technology executes a multi-phase drying
+                protocol with precision-controlled parameters at each stage,
+                optimizing cannabinoid preservation, color retention, and aroma
+                development.
+              </p>
               <div
-                class="rounded-xl overflow-hidden shadow-md border border-gray-100"
+                class="mt-8 p-5 bg-gray-50 rounded-xl border border-gray-100"
               >
+                <h4 class="font-semibold text-gray-900 mb-4">
+                  Business Advantages:
+                </h4>
+                <ul class="space-y-3">
+                  <li class="flex items-start gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 text-primary-green flex-shrink-0 mt-0.5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span class="text-gray-700"
+                      >Terpene preservation of up to 95%</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 text-primary-green flex-shrink-0 mt-0.5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span class="text-gray-700"
+                      >Extended shelf-life (24+ months)</span
+                    >
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 text-primary-green flex-shrink-0 mt-0.5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span class="text-gray-700"
+                      >Elimination of potential microbial contamination</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="h-full lg:order-2">
+              <div class="relative h-full min-h-[300px] lg:min-h-full">
                 <Image
                   src={PostHarvestImage7}
                   alt="Drying process results"
-                  width={400}
-                  height={300}
-                  class="w-full h-auto"
+                  width={800}
+                  height={500}
+                  class="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
             </div>
           </div>
-          <div class="timeline-middle">
-            <div
-              class="w-5 h-5 bg-primary-green rounded-full flex items-center justify-center"
-            >
-              <div class="w-2.5 h-2.5 bg-white rounded-full"></div>
-            </div>
-          </div>
-          <div
-            class="timeline-end timeline-box bg-white shadow-md border border-gray-100 p-6"
-          >
-            <div
-              class="mb-2 text-sm text-primary-green font-medium uppercase tracking-wider"
-            >
-              Step 04
-            </div>
-            <h3
-              class="font-bold text-xl md:text-2xl text-gray-900 leading-tight mb-3"
-            >
-              Multi-Phase Drying Protocol
-            </h3>
-            <p class="mb-4 text-base md:text-lg text-gray-700 leading-relaxed">
-              Our proprietary technology executes a multi-phase drying protocol
-              with precision-controlled parameters at each stage, optimizing
-              cannabinoid preservation, color retention, and aroma development.
-            </p>
-            <div class="bg-gray-50 p-4 rounded-lg mb-4">
-              <p class="font-semibold text-base md:text-lg text-gray-900 mb-3">
-                Business Advantages:
-              </p>
-              <ul class="space-y-3">
-                <li class="flex items-start">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 text-primary-green mr-2 mt-0.5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span class="text-gray-700"
-                    >Terpene preservation of up to 95%</span
-                  >
-                </li>
-                <li class="flex items-start">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 text-primary-green mr-2 mt-0.5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span class="text-gray-700"
-                    >Extended shelf-life (24+ months)</span
-                  >
-                </li>
-                <li class="flex items-start">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 text-primary-green mr-2 mt-0.5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  <span class="text-gray-700"
-                    >Elimination of potential microbial contamination</span
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <hr class="bg-primary-green" />
-        </li>
+        </div>
 
-        <!-- Step 5: Removal & Packaging -->
-        <li>
-          <hr class="bg-primary-green" />
+        <!-- Step 5 -->
+        <div
+          class="group relative rounded-2xl bg-white shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden"
+        >
           <div
-            class="timeline-start timeline-box bg-white shadow-md border border-gray-100 p-6"
+            class="absolute inset-0 bg-gradient-to-r from-primary-green/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
           >
-            <div
-              class="mb-2 text-sm text-primary-green font-medium uppercase tracking-wider"
-            >
-              Step 05
+          </div>
+          <div class="lg:grid lg:grid-cols-2">
+            <div class="h-full">
+              <div class="relative h-full min-h-[300px] lg:min-h-full">
+                <Image
+                  src={PostHarvestImage8}
+                  alt="Final dried flower product"
+                  width={800}
+                  height={500}
+                  class="absolute inset-0 w-full h-full object-cover"
+                />
+              </div>
             </div>
-            <h3
-              class="font-bold text-xl md:text-2xl text-gray-900 leading-tight mb-3"
-            >
-              Quality Control & Packaging
-            </h3>
-            <p class="mb-4 text-base md:text-lg text-gray-700 leading-relaxed">
-              Each batch undergoes rigorous quality assessment before being
-              sealed in pharmaceutical-grade packaging that preserves potency
-              and protects against light, oxygen, and contamination.
-            </p>
-            <div class="mt-4 pt-4 border-t border-gray-100">
-              <div
-                class="flex items-center text-sm text-primary-green font-medium"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 mr-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+            <div class="p-8 lg:p-12">
+              <div class="flex items-center gap-4 mb-6">
+                <div class="badge badge-lg bg-primary-green text-white">
+                  Step 05
+                </div>
+                <div class="h-px flex-1 bg-gray-100"></div>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                Quality Control & Packaging
+              </h3>
+              <p class="text-gray-700">
+                Each batch undergoes rigorous quality assessment before being
+                sealed in pharmaceutical-grade packaging that preserves potency
+                and protects against light, oxygen, and contamination.
+              </p>
+              <div class="mt-8">
+                <div
+                  class="flex items-center gap-3 px-5 py-4 bg-gray-50 rounded-xl border border-gray-100"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"></path>
-                </svg>
-                Business Benefit: Ready for Distribution
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-primary-green flex-shrink-0"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="font-medium text-gray-900"
+                    >Business Benefit: Ready for Distribution</span
+                  >
+                </div>
               </div>
             </div>
           </div>
-          <div class="timeline-middle">
-            <div
-              class="w-5 h-5 bg-primary-green rounded-full flex items-center justify-center"
-            >
-              <div class="w-2.5 h-2.5 bg-white rounded-full"></div>
-            </div>
-          </div>
-          <div class="timeline-end">
-            <div
-              class="rounded-xl overflow-hidden shadow-md border border-gray-100"
-            >
-              <Image
-                src={PostHarvestImage8}
-                alt="Final dried flower product"
-                width={400}
-                height={300}
-                class="w-full h-auto"
-              />
-            </div>
-          </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   </div>
 </section>
