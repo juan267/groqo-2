@@ -2,9 +2,11 @@
 import { Image } from "astro:assets";
 import dryer1Image from "@images/dryer1.png";
 import dryer2Image from "@images/dryer2.png";
+import { CldVideoPlayer } from "astro-cloudinary";
+import { getCldImageUrl } from "astro-cloudinary/helpers";
 ---
 
-<section class="py-8 px-4 sm:px-6 lg:px-8 bg-white">
+<section class="pt-8 px-4 sm:px-6 lg:px-8 bg-white">
   <div class="container mx-auto">
     <div class="max-w-4xl mx-auto text-center mb-16">
       <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
@@ -39,6 +41,32 @@ import dryer2Image from "@images/dryer2.png";
           width={600}
           height={450}
         />
+      </div>
+    </div>
+
+    <!-- Video Player -->
+    <div class="mt-16 mx-auto max-w-3xl">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
+        See Our Technology in Action
+      </h2>
+      <div class="rounded-lg overflow-hidden shadow-xl">
+        <div class="relative aspect-video">
+          <CldVideoPlayer
+            src="w8llcxm7qgdon0v3zs1e"
+            poster={getCldImageUrl({
+              src: "about-hero_gbbdld",
+            })}
+            logo={{
+              imageUrl: getCldImageUrl({
+                src: "logo_hz4lua",
+              }),
+            }}
+            width="1200"
+            height="675"
+            controls
+            class="w-full h-full object-cover"
+          />
+        </div>
       </div>
     </div>
   </div>
